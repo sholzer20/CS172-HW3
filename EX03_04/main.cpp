@@ -24,7 +24,7 @@ string sort(string &s, int stringLength)
 {
 	char charArray[64]; //Creating an array that will store the characters in the string
 	s.copy(charArray, stringLength); //copies the string into the char array
-	sort(std::begin(charArray), std::end(charArray)); //sorts the charArray
+	sort(begin(charArray), end(charArray)); //sorts the charArray
 	s.assign(charArray); //s is assigned the sorted characters in charArray
 	return s;
 }
